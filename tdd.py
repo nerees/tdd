@@ -16,6 +16,9 @@ class NumbersCanBeAdded(unittest.TestCase):
     def test_ar_turi_tarpu(self):
         self.assertIs(ar_turi_tarpu('Jonas Jonavičius su Bebru Bebravičium'), True)
 
+    def test_sudetis(self):
+        self.assertEqual(sudetis(3,3),6)
+
 def numbers_can_be_added(x, y):
     return x + y
 
@@ -30,3 +33,7 @@ def ar_turi_tarpu(tekstas):
         return True
     else:
         return False
+
+
+def sudetis(x,y):
+    return x + y
